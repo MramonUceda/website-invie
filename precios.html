@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Precioso de tus mejores guitarras!</title>
+	<link href="https://fonts.googleapis.com/css?family=Allerta|Montserrat" rel="stylesheet">
+	<link rel="stylesheet" href="css/invie.css"/>
+</head>
+<body>
+	<header id="header" class="header background">   <!-- Header -->
+		<div class="contenedor">
+			<figure class="logotipo"> <!-- Lgotipo-->
+				<img src="images/invie.png" width="186" height="60" alt="Invie logotipo" >
+			</figure>
+			<nav class="menu"> <!-- Menu -->
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="index.html#guitarras">Guitarras</a></li>
+					<li><a href="precios.html">Precios</a></li>
+				</ul>
+			</nav>	
+		</div>
+	</header>
+	<section class="tabla">
+		<div class="contenedor">
+			<table>
+			<thead><!-- Cabecera de una tabla,hay dos tiepos de celas: las normales y las de cabecera -->
+				<tr>
+					<th>Modelo</th> <!-- titulos, celda de cabeceras -->
+					<th>Precio</th>
+					<th>Descripción</th>
+				</tr>
+			</thead>
+			<tbody> <!-- cuerpo -->
+				<tr>
+					<td>Invie Classic</td>
+					<td>$100,000</td>
+					<td>Una guitarra muy pro</td>
+				</tr>
+				<tr>
+					<td>Invie Classic</td>
+					<td>$100,000</td>
+					<td>Una guitarra muy pro</td>
+				</tr>
+				<tr>
+					<td>Invie Classic</td>
+					<td>$100,000</td>
+					<td>Una guitarra muy pro</td>
+				</tr>	
+			</tbody>  
+			</table>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="contenedor">
+			<div class="contacto">
+				<img src="images/invie-white.png" alt="logotipo-blanco"> 
+				<a href="tel:+5255189833"><strong>Teléfono</strong><span>5518983368</span></a>
+				<a href="mailto:marioru699@gmail.com"><strong>E-mail</strong><span>mario@gmail.com</span></a>
+			</div>
+			<form class="formulario">
+				<div class="col1">
+					<!--Descripción de nuestro input de abajo  -->
+					<label for="nombre" >Nombre</label>
+					<!--campo de entra, type:tipo de entrada-->					
+					<input type="text" require id="nombre" name="nombre" /> <!-- aquí el required valida que tenga texto,   -->
+					<label for="email" >E-mail</label>
+					<input type="email" required id="email" name="email" /> <!--con el requiered me pide tal cual la estrcutira de email-->
+					<div class="sexo">
+						<label for="mujer"> 
+							<input type="radio" checked id="mujer" name="sexo" value="mujer">Mujer
+						</label>
+						<label for="hombre"> 
+							<input type="radio" id="hombre" name="sexo" value="hombre">Hombre
+						</label>
+					</div>
+						<div class="intereses"> <!-- selecciones multiples: -->
+							<label class="cotizacion">
+								<input type="checkbox" checked id="cotizacion" name="intereses" value="cotizacion">Cotización
+							</label>
+							<label class="reclamos">
+								<input type="checkbox" id="reclamos" name="intereses" value="reclamos">Reclamos
+							</label>
+							<label class="comentarios">
+								<input type="checkbox" id="comentarios" name="intereses" value="comentarios">Comentarios
+							</label>
+							<label class="otros">
+								<input type="checkbox" id="otros" name="intereses" value="otros">Otros
+							</label>
+						</div>
+					</div>
+					<div class="col2">
+						<label for="comentario">Comentario</label>
+						<textarea name="comentarios" id="comentario" cols="30" rows="7"></textarea>
+						<input type="submit" value="Enviar" class="button">
+					</div>
+				</form>
+		</div>		
+</body>
+</html>

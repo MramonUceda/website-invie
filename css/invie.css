@@ -1,0 +1,245 @@
+/*{
+	width: ;
+	height: ;
+	padding: 10px  ; Es lo que va entre el contenido y el borde, es un padding general
+	padding-top: 10px ;siendo mas especifico con el padding
+	padding-right: 13px;
+	padding-left:; 15px: 
+	padding-bottom: 5px;
+	border: tamañoBorde tipoBorde colorBorde;
+	padding: padding-top 	padding-right padding-bottom padding-left  ; todo lo de arriba en una sola propiedad, esto va en orden como las manecillas del reloj 
+	padding: 10px;
+	margin: 10px ; esta propiedad funciona igual que el paddin con sus valores
+	border: 2px solid red;
+}*/
+
+body{
+	font-family: 'Allerta', sans-serif;
+	margin: 0;
+}
+/*
+tablas*/
+
+table{
+	width: 100%
+}
+th{
+	background: #273b47;
+	color: white;
+}
+th{
+	padding: 10px 20px;
+	text-align: left;
+}
+td{
+	padding: 20px;
+}
+table, td, th{
+	border: 1px solid #273b47;
+	border-collapse: collapse;
+}
+
+input, textarea{
+	outline: 0;
+}
+input:focus, textarea:focus{
+	background: lightgray;
+}
+
+.contenedor{
+		width: 800px;
+	margin: auto;
+	position: relative;
+}
+.background{
+		background-image: url('../images/background.png');  /*../ <-rgresa un nivel de la carpeta*/
+
+	background-size: cover; /*la imagen ya se ve de manera completa en todo el ancho*/
+
+}
+.button{
+	border-radius: 12px;
+	border: none;
+	background: #fd324e;
+	background: linear-gradient(to left, #fe344e, #ff7250);
+	color: white;
+	font-size: 18px;
+	padding: 7px 12px;
+	cursor: pointer;
+	text-decoration: none;
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffa84c+0,ff7b0d+100;Orange+3D 
+		/*background: #ffa84c; /* Old browsers 
+	background: -moz-linear-gradient(top, #ffa84c 0%, #ff7b0d 100%); 
+	background: -webkit-linear-gradient(top, #ffa84c 0%,#ff7b0d 100%); 
+	background: linear-gradient(to bottom, #ffa84c 0%,#ff7b0d 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa84c', endColorstr='#ff7b0d',GradientType=0 ); */
+}
+
+.titulo{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 70px;
+	margin-bottom: 0;
+}
+.titulo span{
+	text-decoration: underline;
+}
+.title-a{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 26px;
+	margin-top: 0;
+	margin-top: 20px;
+}
+.title-b{
+	font-size: 50px;
+	margin-bottom: 20px;
+}
+
+.guitarras{
+	color: #1F313C;
+	margin-bottom: 60px;
+
+}
+.guitarra.left{
+	height: 190px;
+}
+
+.guitarras h2{
+
+	font-size: 35px;
+}
+.portada{ /*Se pueden heredar las propiedades de los padres, que propiedades se pueden heredar¿? pues las fuentes y en este caso los colores */
+	color: white;
+	padding: 20px;
+	height: 500px;
+}
+.portada button{
+	margin-bottom: 70px;	
+}
+
+.menu{
+	font-size: 24px;
+	display: inline-block;
+	position: absolute;
+	right: 0;
+}
+.menu li{
+	display: inline-block;
+	margin-left: 30px;
+	color: white;
+
+}
+.menu li:before{
+	content: '∘';
+	font-size: 22px;
+	line-height: 20px;
+}
+.menu a{
+	color: white;
+	text-decoration: none;
+}
+
+.logotipo{
+	display: inline-block;
+	margin-left: 0;
+}
+
+
+.guitarra{
+	margin:10px 10px 40px 10px;
+	padding: 10px;
+	/*overflow: hidden;*/
+	border: 1px solid #1F313C;
+	border-radius: 8px;
+}
+.guitarra ol{
+	padding: 0;
+}
+.derecha{
+	float: right;
+	position: relative;
+	top: -127px;
+}
+.izquierda{
+	float: left;
+	position: relative;
+	
+}
+.contenedor-guitarra-a{
+	padding-left: 20px;
+	
+}
+.contenedor-guitarra-b{
+	margin-left: 370px;
+	position: relative;
+	bottom: 100px
+}
+header{
+	position: relative;
+}
+/*De aquí para abajo es el footer*/
+
+.footer{
+	background: #273b47;
+	padding: 50px 10px;
+}
+
+.contacto{
+	display: flex;
+	width: 300px;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.contacto img{
+	display: block;
+}
+.contacto strong{
+	display: block;
+}
+.contacto a{
+	color: white;
+	text-decoration: none;
+	margin: 10px 10px 10px 0;
+}
+.footer .contenedor{
+	display: flex;
+}
+.formulario{
+	display: flex;
+	width: 40px;
+	color: white;
+	
+}
+.col1, .col2{
+	display: flex;
+	flex-direction: column;
+}
+.col1{
+	margin-right: 15px;
+}
+
+
+.col2{
+	align-items: flex-start;
+}
+
+.col2 .button{
+	margin-top: 15px;
+}
+
+.intereses label{
+	font-size: 12px;
+}
+
+.formulario label, .sexo, .intereses{
+	margin-bottom: 10px;
+}
+.sexo{
+	margin-top: 10px;
+}
+
+.tabla{
+	margin: 50px 0;
+}
+
+
